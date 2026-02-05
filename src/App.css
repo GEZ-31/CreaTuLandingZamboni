@@ -1,12 +1,34 @@
+:root {
+    --primary-color: #233D8B;
+    --secondary-color: #EFF1F8;
+    --accent-color: #FF6F61;
+    --font-family: 'Arial', sans-serif;
+}
+
 .nav-container{
-    background-color: #233D8B;
-    padding: 2rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 200px;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: end;
+    height: 100%;
+    width: 60%;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 20%;
 }
 .nav-link{
-    color: #EFF1F8;
+    color: var(--secondary-color);
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
