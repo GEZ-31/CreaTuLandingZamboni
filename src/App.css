@@ -33,3 +33,10 @@
     text-decoration: none;
     cursor: pointer;
 }
+.item_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 2rem;
+}

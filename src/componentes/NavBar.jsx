@@ -16,6 +16,8 @@ const NavBar =()=>{
                 <NavDropdown.Item href="">Cuadros decorativos</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="">Remeras estampadas</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="">Peluches Pokemon</NavDropdown.Item>
               </NavDropdown>
               <a className="nav-link" href="">Envíos</a>
               <a className="nav-link" href="">Contacto</a>
