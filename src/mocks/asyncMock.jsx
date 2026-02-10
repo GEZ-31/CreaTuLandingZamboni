@@ -303,3 +303,15 @@ export const getProductos = () => {
         }, 2000)
     })
 }
+export const getItem = (id) => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            if(error){
+                rej('Hubo un error')
+            }else{
+                let prod = productos.find((prod) => prod.id === id)
+                res(prod)
+            }
+        }, 2000)
+    })
+}
