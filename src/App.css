@@ -38,7 +38,19 @@
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 5rem;
+}
+.item_custom{
+    width: 18rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+   ;
+}
+.img-size{
+    height: 18rem;
+    object-fit: cover;
 }
 .counter-container {
   display: flex;

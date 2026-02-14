@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar =()=>{
     return(
-        <nav className="nav-container">
+        <nav className="nav-container fs-3">
             <div className='nav-logo'>
-              <a as={NavLink} className="nav-link" to='/'>
+              <NavLink  to='/'>
                 <img src={'../logo-akari-rojo.png'} alt="Logo Akari Store" width={180} />
-              </a>
+              </NavLink>
             </div>
             <div className="nav-links">
               <NavDropdown title="Categorías" id="basic-nav-dropdown">
@@ -20,9 +20,9 @@ const NavBar =()=>{
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to='/category/peluches'>Peluches Pokemon</NavDropdown.Item>
               </NavDropdown>
-              <a className="nav-link" href="">Envíos</a>
-              <a className="nav-link" href="">Contacto</a>
-              <CartWidget />
+              <NavLink className="nav-link" to="/">Envíos</NavLink>
+              <NavLink className="nav-link" to="/">Contacto</NavLink>
+              <CartWidget/>
             </div>  
         </nav>
     )

@@ -20,7 +20,7 @@ const ItemListContainer =(props)=>{
     }, [type])
     return(
         <div>
-            <h1>{mensaje}{type && <span style={{textTransform:'capitalize'}}>{type}</span>}</h1>
+            <h1 className="mx-auto p-4" style={{width:'fit-content', marginTop:'4rem'}}>{mensaje}{type && <span style={{textTransform:'capitalize'}}>{type}</span>}</h1>
             <ItemList data={data}/>
         </div>
     )

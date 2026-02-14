@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 const Item = ({prod}) => {
   return (
-    <Card  style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={prod.img} />
-      <Card.Body>
+    <Card  className='item_custom'>
+      <Card.Img variant="top" className='img-size object-fit-scale' src={prod.img} />
+      <Card.Body className='d-flex flex-column justify-content-between align-items-start'>
         <Card.Title>{prod.name}</Card.Title>
         <Card.Text>Precio: ${prod.price},00</Card.Text>
-        <Link to={`/item/${prod.id}`} className="btn btn-dark">Ver más</Link>
+        <Link to={`/item/${prod.id}`} className="btn btn-dark justify-content-center">Ver más</Link>
       </Card.Body>
     </Card>
   )
