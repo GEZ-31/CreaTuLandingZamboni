@@ -17,7 +17,7 @@
     display: flex;
     gap: 2rem;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     height: 100%;
     width: 60%;
 }
@@ -29,22 +29,21 @@
 }
 .nav-link{
     color: var(--secondary-color);
-    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
 .item_list{
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: space-evenly;
-    padding: 5rem;
+    padding: 3rem;
 }
 .item_custom{
     width: 18rem;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--primary-color);
     transition: transform 0.2s;
    ;
 }

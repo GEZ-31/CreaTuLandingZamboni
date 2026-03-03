@@ -6,9 +6,9 @@ const ItemDetail = ({ detalle }) => {
     console.log(`Agregaste al carrito ${cantidad} unidades de ${detalle.name}`);
   };
   return (
-    <div className="d-flex flex-column align-items-center m-4 gap-4">
+    <div className="d-flex flex-column align-items-center m-2 gap-3">
       <h1 className="text-center p-4">Detalle de {detalle.name}</h1>
-      <div className="d-flex gap-4 justify-content-evenly align-items-center">
+      <div className="d-flex gap-4 justify-content-evenly align-items-start">
         <img src={detalle.img} alt={detalle.name} className="w-25 p-6 m-2 object-fit-cover"/>        
         <div className="w-50 d-flex flex-column gap-4">
           <p className="fs-5">{detalle.description}</p>

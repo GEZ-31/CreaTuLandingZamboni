@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar =()=>{
     return(
-        <nav className="nav-container fs-3">
+        <nav className="nav-container fs-4">
             <div className='nav-logo'>
               <NavLink  to='/'>
                 <img src={'../logo-akari-rojo.png'} alt="Logo Akari Store" width={180} />
@@ -20,8 +20,8 @@ const NavBar =()=>{
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to='/category/peluches'>Peluches Pokemon</NavDropdown.Item>
               </NavDropdown>
-              <NavLink className="nav-link" to="/">Envíos</NavLink>
-              <NavLink className="nav-link" to="/">Contacto</NavLink>
+              <NavLink className="nav-link" to="/envios">Envíos</NavLink>
+              <NavLink className="nav-link" to="/contacto">Contacto</NavLink>
               <CartWidget/>
             </div>  
         </nav>
