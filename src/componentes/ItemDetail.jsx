@@ -1,9 +1,15 @@
-import React from "react";
 import ItemCount from "../componentes/ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({ detalle }) => {
+  const {cart, addItem} = useContext(CartContext);
+   console.log(cart);
   const onAdd = (cantidad) => {
-    console.log(`Agregaste al carrito ${cantidad} unidades de ${detalle.name}`);
+  /*  console.log(`Agregaste al carrito ${cantidad} unidades de ${detalle.name}`); */
+   
+    addItem(detalle, cantidad);
+    
   };
   return (
     <div className="d-flex flex-column align-items-center m-2 gap-3">
