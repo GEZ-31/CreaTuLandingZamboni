@@ -1,13 +1,13 @@
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import CartWidget from "./CartWidget"
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const NavBar =()=>{
     return(
         <nav className="nav-container fs-4">
             <div className='nav-logo'>
               <NavLink  to='/'>
-                <img src={'../logo-akari-rojo.png'} alt="Logo Akari Store" width={180} />
+                <img src={'../logo-akari-rojo.png'} alt="Logo Akari Store" width={120} />
               </NavLink>
             </div>
             <div className="nav-links">
@@ -22,7 +22,7 @@ const NavBar =()=>{
               </NavDropdown>
               <NavLink className="nav-link" to="/envios">Envíos</NavLink>
               <NavLink className="nav-link" to="/contacto">Contacto</NavLink>
-              <CartWidget/>
+              <CartWidget />
             </div>  
         </nav>
     )
