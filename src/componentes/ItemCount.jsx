@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FiMinus } from "react-icons/fi";
+import { IoIosAdd } from "react-icons/io";
 
 const ItemCount = ({ onAdd, stock }) => {
   const [count, setCount] = useState(1);
@@ -24,13 +26,14 @@ const ItemCount = ({ onAdd, stock }) => {
         <div className="counter-container">
           <div className="counter-controls">
             <button className="btn btn-danger" onClick={restar}>
-              -
+              <FiMinus />
+
             </button>
 
             <span className="counter-value">{count}</span>
 
             <button className="btn btn-success" onClick={sumar}>
-              +
+             <IoIosAdd  />
             </button>
           </div>
 

@@ -8,6 +8,7 @@ import Envios from './componentes/Envios'
 import Contacto from './componentes/Contacto'
 import { CartProvider } from './context/CartProvider'
 import CartContainer from './componentes/CartContainer'
+import Checkout from './componentes/Checkout'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Route path="/envios" element={<Envios/>} />
           <Route path="/contacto" element={<Contacto/>} />
           <Route path="/cart" element={<CartContainer/>} />
+          <Route path="/checkout" element={<Checkout/>} />
           <Route path="*" element={<Error/>} />
         </Routes>
       </CartProvider>
