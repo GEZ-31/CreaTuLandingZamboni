@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { getProductos } from "../mocks/asyncMock";
+import { getDocs, collection, query, where } from "firebase/firestore";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import Loader from "./Loader";
+import { db } from "../services/firebase";
 
 const ItemListContainer = (props) => {
   const { mensaje } = props;
@@ -11,13 +12,15 @@ const ItemListContainer = (props) => {
   const [cargando, setCargando] = useState(false);
   useEffect(() => {
     setCargando(true);
-    getProductos()
+    const productsCollection = type
+      ? query(collection(db, "productos"), where("category", "==", type))
+      : collection(db, "productos");
+    getDocs(productsCollection)
       .then((res) => {
-        if (type) {
-          setData(res.filter((prod) => prod.category === type));
-        } else {
-          setData(res);
-        }
+        const list = res.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setData(list);
       })
       .catch((error) => console.log(error))
       .finally(() => setCargando(false));

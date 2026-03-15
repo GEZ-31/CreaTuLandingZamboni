@@ -21,7 +21,7 @@ const Cart = () => {
                         </div>                        
                         <div className="card-body d-flex flex-row justify-content-between gap-3" >
                             <p className="card-text mb-0 fs-4"> Total: ${compra.price * compra.quantity},00 </p>
-                            <button className="btn btn-danger" onClick={() => removeItem(compra.id)}> X </button>
+                            <button className="btn btn-danger" onClick={() => removeItem(compra.id)} > X </button>
                         </div>
                     </div>
                 </div>    

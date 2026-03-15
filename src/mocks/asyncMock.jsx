@@ -1,7 +1,7 @@
 const productos = [
     {
         id: '01',
-        name: 'Cuadro DS1',
+        name: 'Cuadro Demon Slayer 1',
         description: 'Cuadro decorativo con imagen de Demon Slayer, consta de cinco rectángulos para colgar. El material es madera laminada y las medidas del cuadro armado son 1,5m de ancho y 0,90m de altura.',
         stock: 8,
         price: 62000,
@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: '02',
-        name: 'Cuadro TG1',
+        name: 'Cuadro Tokyo Ghoul 1',
         description: 'Cuadro decorativo con imagen de Tokyo Ghoul, consta de cinco rectángulos para colgar. El material es madera laminada y las medidas del cuadro armado son 1,5m de ancho y 0,90m de altura.',
         stock: 5,
         price: 70000,
@@ -20,7 +20,7 @@ const productos = [
     },
     {
         id: '03',
-        name: 'Cuadro DB1',
+        name: 'Cuadro Dragon Ball 1',
         description: 'Cuadro decorativo con imagen de Dragon Ball, consta de cinco rectángulos para colgar. El material es madera laminada y las medidas del cuadro armado son 1,5m de ancho y 0,90m de altura.',
         stock: 16,
         price: 53000,
@@ -29,7 +29,7 @@ const productos = [
     },
     {
         id: '04',
-        name: 'Cuadro AT1',
+        name: 'Cuadro Attack On Titan 1',
         description: 'Cuadro decorativo con imagen de Attack On Titan, consta de cinco rectángulos para colgar. El material es madera laminada y las medidas del cuadro armado son 1,5m de ancho y 0,90m de altura.',
         stock: 7,
         price: 75000,
@@ -38,7 +38,7 @@ const productos = [
     },
     {
         id: '05',
-        name: 'Cuadro SAO1',
+        name: 'Cuadro Sword Art Online 1',
         description: 'Cuadro decorativo con imagen de Sword Art Online, consta de cinco rectángulos para colgar. El material es madera laminada y las medidas del cuadro armado son 1,5m de ancho y 0,90m de altura.',
         stock: 12,
         price: 63000,
@@ -47,7 +47,7 @@ const productos = [
     },
     {
         id: '06',
-        name: 'Figura AT1',
+        name: 'Figura Attack On Titan 1',
         description: 'Figura de Eren Jaeger versión titán, personaje principal de Attack On Titan. La figura mide 30cm de altura y está hecha de PVC.',
         stock: 30,
         price: 95000,
@@ -56,7 +56,7 @@ const productos = [
     },
     {
         id: '07',
-        name: 'Figura AT2',
+        name: 'Figura Attack On Titan 2',
         description: 'Figura de Eren Jaeger versión legión, personaje principal de Attack On Titan. La figura mide 30cm de altura y está hecha de PVC.',
         stock: 25,
         price: 90000,
@@ -65,7 +65,7 @@ const productos = [
     },
     {
         id: '08',
-        name: 'Figura DB1',
+        name: 'Figura Dragon Ball 1',
         description: 'Figura de Goku versión Super Saiyajin, personaje principal de Dragon Ball. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 40,
         price: 85000,
@@ -74,7 +74,7 @@ const productos = [
     },
     {
         id: '09',
-        name: 'Figura DB2',
+        name: 'Figura Dragon Ball 2',
         description: 'Figura de Vegeta, personaje principal de Dragon Ball. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 35,
         price: 80000,
@@ -83,7 +83,7 @@ const productos = [
     },
     {
         id: '10',
-        name: 'Figura DB3',
+        name: 'Figura Dragon Ball 3',
         description: 'Figura de Majin Boo, personaje principal de Dragon Ball. La figura mide 25cm de altura y está hecha de PVC.', 
         stock: 20,
         price: 75000,
@@ -92,7 +92,7 @@ const productos = [
     },
     {
         id: '11',
-        name: 'Figura DS1',
+        name: 'Figura Demon Slayer 1',
         description: 'Figura de Tanjiro, personaje principal de Demon Slayer. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 25,
         price: 85000,
@@ -101,7 +101,7 @@ const productos = [
     },
     {
         id: '12',
-        name: 'Figura DS2',
+        name: 'Figura Demon Slayer 2',
         description: 'Figura de Tanjiro y Nezuko, personajes principales de Demon Slayer. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 30,
         price: 120000,
@@ -110,7 +110,7 @@ const productos = [
     },
     {
         id: '13',
-        name: 'Figura NS1',
+        name: 'Figura Naruto 1',
         description: 'Figura de Naruto, personaje principal de Naruto. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 40,
         price: 85000,
@@ -119,7 +119,7 @@ const productos = [
     },
     {
         id: '14',
-        name: 'Figura NS2',
+        name: 'Figura Naruto 2',
         description: 'Figura de Itachi, personaje principal de Naruto. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 35,
         price: 98000,
@@ -128,7 +128,7 @@ const productos = [
     },
     {
         id: '15',
-        name: 'Figura NS3',
+        name: 'Figura Naruto 3',
         description: 'Figura de Itachi y Sasuke, personajes principales de Naruto. La figura mide 25cm de altura y está hecha de PVC.',
         stock: 20,
         price: 115000,
@@ -137,7 +137,7 @@ const productos = [
     },
     {
         id: '16',
-        name: 'Peluche PK1',
+        name: 'Peluche Pokemon 1',
         description: 'Peluche del Pokemon Bulbasor. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 30,
         price: 12000,
@@ -146,7 +146,7 @@ const productos = [
     },
     {
         id: '17',
-        name: 'Peluche PK2',
+        name: 'Peluche Pokemon 2',
         description: 'Peluche del Pokemon Eevee. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 25,
         price: 12000,
@@ -155,7 +155,7 @@ const productos = [
     },
     {
         id: '18',
-        name: 'Peluche PK3',
+        name: 'Peluche Pokemon 3',
         description: 'Peluche del Pokemon Lapras. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 30,
         price: 12000,
@@ -164,7 +164,7 @@ const productos = [
     },
     {
         id: '19',
-        name: 'Peluche PK4',
+        name: 'Peluche Pokemon 4',
         description: 'Peluche del Pokemon Marowak. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 25,
         price: 12000,
@@ -173,7 +173,7 @@ const productos = [
     },
     {
         id: '20',
-        name: 'Peluche PK5',
+        name: 'Peluche Pokemon 5',
         description: 'Peluche del Pokemon Charizard. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 30,
         price: 12000,
@@ -182,7 +182,7 @@ const productos = [
     },
     {
         id: '21',
-        name: 'Peluche PK6',
+        name: 'Peluche Pokemon 6',
         description: 'Peluche del Pokemon Pikachu. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 30,
         price: 12000,
@@ -191,7 +191,7 @@ const productos = [
     },
     {
         id: '22',
-        name: 'Peluche PK7',
+        name: 'Peluche Pokemon 7',
         description: 'Peluche del Pokemon Snorlax. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 25,
         price: 12000,
@@ -200,7 +200,7 @@ const productos = [
     },
     {
         id: '23',
-        name: 'Peluche PK8',
+        name: 'Peluche Pokemon 8',
         description: 'Peluche del Pokemon Squirtle. El peluche mide 20cm de altura y está hecho de algodón.',
         stock: 30,
         price: 12000,
@@ -209,7 +209,7 @@ const productos = [
     },
     {
         id: '24',
-        name: 'Remera DN1',
+        name: 'Remera Death Note 1',
         description: 'Remera estampada con imagen de Death Note. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 50,
         price: 7500,
@@ -218,7 +218,7 @@ const productos = [
     },
     {
         id: '25',
-        name: 'Remera NS1',
+        name: 'Remera Naruto 1',
         description: 'Remera estampada con imagen de Naruto. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 40,
         price: 7500,
@@ -227,7 +227,7 @@ const productos = [
     },
     {
         id: '26',
-        name: 'Remera NS2',
+        name: 'Remera Naruto 2',
         description: 'Remera estampada con imagen de Naruto. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 38,
         price: 7500,
@@ -236,7 +236,7 @@ const productos = [
     },
     {
         id: '27',
-        name: 'Remera NS3',
+        name: 'Remera Naruto 3',
         description: 'Remera estampada con imagen de Naruto. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 35,
         price: 7500,
@@ -245,7 +245,7 @@ const productos = [
     },
     {
         id: '28',
-        name: 'Remera NS4',
+        name: 'Remera Naruto 4',
         description: 'Remera estampada con imagen de Naruto. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 30,
         price: 7500,
@@ -254,7 +254,7 @@ const productos = [
     },
     {
         id: '29',
-        name: 'Remera NS5',
+        name: 'Remera Naruto 5',
         description: 'Remera estampada con imagen de Naruto. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 32,
         price: 7500,
@@ -263,7 +263,7 @@ const productos = [
     },
     {
         id: '30',
-        name: 'Remera OP1',
+        name: 'Remera One Piece 1',
         description: 'Remera estampada con imagen de One Piece. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 40,
         price: 7500,
@@ -272,7 +272,7 @@ const productos = [
     },
     {
         id: '31',
-        name: 'Remera OP2',
+        name: 'Remera One Piece 2',
         description: 'Remera estampada con imagen de One Piece. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 35,
         price: 7500,
@@ -281,7 +281,7 @@ const productos = [
     },
     {
         id: '32',
-        name: 'Remera DB1',
+        name: 'Remera Dragon Ball 1',
         description: 'Remera estampada con imagen de Dragon Ball. La remera está hecha de algodón, es talle único y es unisex.',
         stock: 40,
         price: 7500,
