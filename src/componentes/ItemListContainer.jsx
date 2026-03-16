@@ -25,6 +25,8 @@ const ItemListContainer = (props) => {
       .catch((error) => console.log(error))
       .finally(() => setCargando(false));
   }, [type]);
+
+  
   return (
     <>
       {cargando ? (

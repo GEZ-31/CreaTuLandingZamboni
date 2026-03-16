@@ -12,7 +12,6 @@ const Checkout = () => {
     const [ordenId, setOrdenId] = useState('');
     const [cargando, setCargando] = useState(false);
     const [error, setError] = useState(null);
-
     
     const {cart, total, clear} = useContext(CartContext);
 
@@ -59,6 +58,7 @@ const Checkout = () => {
             <div className="d-flex flex-column justify-content-center align-items-center m-auto  gap-4  w-50">
                 <h1 className="my-5">¡Gracias por tu compra!</h1>
                 <p className="fs-5">Tu código de orden es: {ordenId}</p>
+                <Link to={`/orden/${ordenId}`} className="btn btn-primary">Ver mi pedido</Link>
                 <Link to="/" className="btn btn-dark">Volver al inicio</Link>
             </div>
             :            
