@@ -21,7 +21,7 @@ Esta web app creada con React + Vite fue realizada como proyecto para el curso d
 
 ### Versión host
 
-Si desea ver el proyecto online puede dirigirse a: [Link Web]()
+Si desea ver el proyecto online puede dirigirse a: [Link Web](https://akaristore.vercel.app/)
 
 ### Librerías utilizadas
 
