@@ -18,7 +18,8 @@ const Cart = () => {
                 <img
                   src={compra.img}
                   className="img-fluid rounded-start"
-                  width="120"
+                  width="200em"
+                  minWidth="100px"
                   alt={compra.name}
                 />
               </div>

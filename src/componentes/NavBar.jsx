@@ -2,12 +2,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Container, Navbar } from "react-bootstrap";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="nav-container fs-4">
+    <Navbar expand="lg" className="nav-container fs-4">
+      <Container fluid >
       <div className="nav-logo">
         <NavLink to="/">
           <img
@@ -19,7 +21,7 @@ const NavBar = () => {
       </div>
       <button
         className="navbar-toggler d-lg-none nav-link"
-        type="button"
+        style={{ border: "none" , color:"white", backgroundColor:"white" }}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="navbar-toggler-icon"></span>
@@ -50,7 +52,8 @@ const NavBar = () => {
         </NavLink>
         <CartWidget />
       </div>
-    </nav>
+      </Container>
+    </Navbar>
   );
 };
 export default NavBar;
