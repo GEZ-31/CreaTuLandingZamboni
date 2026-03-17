@@ -2,11 +2,13 @@ import { useContext } from 'react'
 import { CartContext } from '../context/CartContext';
 import { TiDelete } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
+import { Toaster, toast } from 'react-hot-toast';
 
 const Cart = () => {
     const {cart, clear, removeItem, total} = useContext(CartContext);
   return (
     <div className='d-flex flex-column justify-content-start m-3'>
+        <Toaster position="top-center" reverseOrder={false} />
         <h2 className="p-4 ">Carrito</h2>
         <div className='d-flex flex-column justify-content-start'>
             {cart.map((compra)=>(
@@ -23,7 +25,7 @@ const Cart = () => {
                         </div>                        
                         <div className="card-body d-flex flex-row justify-content-between gap-3" >
                             <p className="card-text mb-0 fs-4"> Total: ${compra.price * compra.quantity},00 </p>
-                            <button className="btn btn-danger p-1" onClick={() => removeItem(compra.id)} > <TiDelete className='fs-3'/> </button>
+                            <button className="btn btn-danger p-1" onClick={() => { removeItem(compra.id); toast.success("Producto eliminado del carrito"); }} > <TiDelete className='fs-3'/> </button>
                         </div>
                     </div>
                 </div>    
@@ -32,7 +34,7 @@ const Cart = () => {
         <div className='d-flex flex-column justify-content-between m-3'>
             <span className='ms-2 fs-3'>Total a pagar: ${total()},00 </span>
             <div className='my-2'>
-                <button className="btn m-2 btn-danger" onClick={clear}>Vaciar carrito</button>
+                <button className="btn m-2 btn-danger" onClick={() => { clear(); toast.success("Carrito vaciado"); }}>Vaciar carrito</button>
                 <Link to="/checkout" className="btn m-2 btn-success">Terminar compra</Link>
             </div>
         </div>
