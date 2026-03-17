@@ -1,6 +1,5 @@
-import React from 'react'
-import { Button, Card } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
   return (
@@ -9,12 +8,15 @@ const EmptyCart = () => {
       <Card.Body>
         <Card.Title>Tu carrito está vacío </Card.Title>
         <Card.Text>
-          Te invitamos a visitar nuestra tienda para agregar productos a tu carrito.
+          Te invitamos a visitar nuestra tienda para agregar productos a tu
+          carrito.
         </Card.Text>
-        <Button as={Link} to="/" variant="primary">Ir a la tienda</Button>
+        <Button as={Link} to="/" variant="primary">
+          Ir a la tienda
+        </Button>
       </Card.Body>
     </Card>
-  )
-}
+  );
+};
 
-export default EmptyCart
+export default EmptyCart;

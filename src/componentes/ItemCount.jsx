@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiMinus } from "react-icons/fi";
 import { IoIosAdd } from "react-icons/io";
 
@@ -20,23 +20,22 @@ const ItemCount = ({ onAdd, stock }) => {
 
   return (
     <>
-      {stock === 0  ? (
+      {stock === 0 ? 
+      (
         <p className="text-danger">No hay stock disponible</p>
-      ) : (
+      )
+      : 
+      (
         <div className="counter-container">
           <div className="counter-controls">
             <button className="btn btn-danger" onClick={restar}>
               <FiMinus />
-
             </button>
-
             <span className="counter-value">{count}</span>
-
             <button className="btn btn-success" onClick={sumar}>
-             <IoIosAdd  />
+              <IoIosAdd />
             </button>
           </div>
-
           <button className="btn btn-primary buy-btn" onClick={comprar}>
             Comprar
           </button>

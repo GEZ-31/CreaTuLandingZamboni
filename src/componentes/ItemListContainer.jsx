@@ -26,7 +26,6 @@ const ItemListContainer = (props) => {
       .finally(() => setCargando(false));
   }, [type]);
 
-  
   return (
     <>
       {cargando ? (
